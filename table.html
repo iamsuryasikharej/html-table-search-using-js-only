@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+ <style>
+        table{
+            border:2px solid;
+            text-align: center;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            align-items: center;
+            /* justify-content: center; */
+        }
+        *
+        {
+            letter-spacing: 1px;
+            
+        }
+        table{
+            width: 80%;
+            text-align: left;
+            transition:2s;
+            
+        }
+        table tr{
+            border: 1px solid;
+        }
+        table th 
+        {
+            border: 1px solid;
+        }
+        table td{
+            border:1px solid;
+        }
+    </style>
+</head>
+<body>
+    <table id="mytable">
+        <tbody>
+            <tr>
+                <th><a>Customer</a></th>
+                <th><a>Loaction</a></th>
+                <th><a>number</a></th>
+                <th><a>email</a></th>
+                <th><a>stage</a></th>
+                
+                
+            </tr>
+            <tr>
+                <td>surya</td>
+                
+                <td>kolkata</td>
+                <td>115</td>
+                <td>abc@abc.com</td>
+            </tr>
+            <tr>
+                <td>Shyam</td>
+                
+                <td>Meerut</td>
+                <td>116</td>
+                <td>abc@abcd.com</td>
+            </tr>
+            <tr>
+                <td>jane</td>
+               
+                <td>odisa</td>
+                <td>117</td>
+                <td>abc@abcdef.com</td>
+            </tr>
+            <tr>
+                <td>fooo</td>
+                
+                <td>haryana</td>
+                <td>118</td>
+                <td>abc@abcdefg.com</td>
+
+            </tr>
+            <tr>
+                <td>fooo2</td>
+                
+                <td>chennai</td>
+                <td>145</td>
+                <td>abc@abcdefgh.com</td>
+
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <div id="selectdiv">
+        <select name="colname" id="selectcol" style="width:150px">
+           <option default selected style="display: none;">choose a col</option>
+        </select>
+    </div>
+    <input type="text" id="valuetosearch" onkeyup="filterFunc()">
+      <script src="custom.js"></script>
+</body>
+</html>
