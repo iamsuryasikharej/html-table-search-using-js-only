@@ -101,13 +101,22 @@
     </div> --> 
     <!-- first prototype -->
 
-    
     <div id="selectdiv">
-        <select name="colname" id="selectcol" style="width:150px">
+        <select name="colname" class="selectcol" style="width:150px">
            <option default selected style="display: none;">choose a col</option>
         </select>
     </div>
-    <input type="text" id="valuetosearch" onkeyup="filterFunc()">
+
+    <div id="selectdiv">
+        <select name="colname" class="selectcol" style="width:150px">
+           <option default selected style="display: none;">choose a col</option>
+        </select>
+    </div>
+
+    
+    <input type="text" class="valuetosearch" onkeyup="filterFunc()">
+    <input type="text" class="valuetosearch" onkeyup="filterFunc()">
       <script src="custom.js"></script>
+      
 </body>
 </html>
